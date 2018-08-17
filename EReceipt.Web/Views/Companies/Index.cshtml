@@ -1,0 +1,46 @@
+﻿@model IEnumerable<EReceipt.Model.Company>
+
+@{
+    ViewBag.Title = "Companies";
+    Layout = "~/Views/Shared/_Users.cshtml";
+}
+
+
+
+<div class="container">
+    <table class="table table-responsive table-striped">
+        <thead>
+        <tr>
+            <th></th>
+            <th>Company Name</th>
+            <th>Address</th>
+            <th>Phone</th>
+            <th>
+                <span class="glyphicons glyphicons-invoice"></span>
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.OrderBy(e => e.Name))
+            {
+                <tr>
+                    <td>
+                        <a class="btn btn-primary" href="/Companies/Details/@item.Id">View Details</a>
+                    </td>
+                    <td>
+                        @item.Name
+                    </td>
+                    <td>
+                        @item.Address
+                    </td>
+                    <td>
+                        @item.Phone
+                    </td>
+                    <td>
+                        @item.Invoices.Count
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

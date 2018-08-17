@@ -1,0 +1,36 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Styles = "/Content/styles/users.css";
+}
+
+
+<div id="innerStaticHeader">
+    
+</div>
+
+<div id="innerNav">
+    <div class="container">
+        <ul>
+            <li>
+                <a href="/Dashboard"><span class="fa fa-dashboard"></span> Dashboard</a>
+            </li>
+
+            <li>
+                <a href="/Companies" ><span class="glyphicons glyphicons-mixed-buildings"></span> Companies</a>
+            </li>
+
+            <li>
+                <a href="/Invoices"><span class="glyphicons glyphicons-invoice"></span> Receipts</a>
+            </li>
+
+            <li>
+                <a href="Settings"><span class="fa fa-cogs"></span> Profile</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<div id="innerCon">
+    @RenderBody()
+</div>

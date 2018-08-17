@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Content/images/favicon.ico" type="image/x-icon" />
+    <title>@ViewBag.Title - Admin | E-Receipt</title>
+
+    <link href="~/Content/styles/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/styles/fonts.css" rel="stylesheet" />
+    <link href="~/Content/styles/jquery-ui.min.css" rel="stylesheet" />
+    <link href="~/Content/styles/myglyphicons2.css" rel="stylesheet" />
+    <link href="~/Content/styles/font-awesome.css" rel="stylesheet" />
+    <link href="~/Content/styles/animate.css" rel="stylesheet" />
+    <link href="~/Content/styles/admin.css" rel="stylesheet" />
+
+    <script src="~/Content/scripts/jquery-1.10.1.min.js"></script>
+    <script src="~/Content/scripts/bootstrap.min.js"></script>
+    <script src="~/Content/scripts/jquery-ui.min.js"></script>
+    <script src="~/Content/scripts/list.min.js"></script>
+    <script src="~/Content/scripts/wow.min.js"></script>
+
+    <script>
+        var wow = new WOW(
+  {
+      boxClass: 'wow',      // animated element css class (default is wow)
+      animateClass: 'animated', // animation css class (default is animated)
+      offset: 0,          // distance to the element when triggering the animation (default is 0)
+      mobile: true,       // trigger animations on mobile devices (default is true)
+      live: true,       // act on asynchronously loaded content (default is true)
+      callback: function (box) {
+          // the callback is fired every time an animation is started
+          // the argument that is passed in is the DOM node being animated
+      },
+      scrollContainer: null // optional scroll container selector, otherwise use window
+  }
+);
+        wow.init();
+    </script>
+
+
+    <script src="@ViewBag.Scripts"></script>
+
+    @*<script src="~/ckeditor/ckeditor.js"></script>
+    <script src="~/ckeditor/adapters/jquery.js"></script>*@
+</head>
+<body id="@ViewBag.BodyId">
+   <aside>
+    <header>
+        <h1><a href="/Home" target="_blank" title="Goto Homepage"><img src="/Content/images/logo_white.png" /></a></h1>
+        <div>
+            <img class="img-circle img-thumbnail" src="/Content/images/admin.png"/>
+            <h2>@Session["Name"]</h2>
+            <h4>@Session["Username"]</h4>
+        </div>
+    </header>
+    <nav>
+        <a href="/Admin/Home" id="home"><span class="fa fa-dashboard"></span> Dashboard</a>
+        <a href="/Admin/Companies" id="companies"><span class="glyphicons glyphicons-mixed-buildings"></span> Companies</a>
+        <a href="/Admin/Invoices" id="invoices"><span class="glyphicons glyphicons-invoice"></span> Invoices</a>
+        <a href="/Admin/Users" id="users"><span class="glyphicons glyphicons-group"></span> Users</a>
+        <a href="/Admin/Blogs" id="blogs"><span class="glyphicons glyphicons-blog"></span> Blogs</a>
+        <a href="/Account/LogOff"><span class="glyphicons glyphicons-exit"></span> Log Off</a>
+    </nav>
+    <footer>
+        
+    </footer>
+</aside>
+<main>
+    <nav class="text-right">
+        <a href="#"><span class="fa fa-globe"></span> </a>
+        <a href="#"><span class="fa fa-user"></span> </a>
+        <a href="/Admin/Settings"><span class="glyphicons glyphicons-settings"></span> </a>
+        <a href="/Account/LogOff"><span class="glyphicons glyphicons-exit"></span></a>
+    </nav>
+    <div id="mainInnerCon">
+        @RenderBody()
+    </div>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+﻿@model EReceipt.Web.Models.LogOnModel
+
+@{
+    ViewBag.Title = "Log On";
+    Layout = "~/Views/Shared/_Account.cshtml";
+}
+
+
+<div class="col-lg-4 col-md-4 col-sm-3 col-xs-12">
+
+</div>
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+    @using (Html.BeginForm())
+    {
+    @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true)
+
+        
+        <div class="form-group">
+            <label for="usernameTb">@Html.LabelFor(model => model.UserName) <span class="glyphicon glyphicon-question-sign"></span></label>
+
+            @Html.TextBoxFor(model => model.UserName, new { @class = "form-control input-lg text-center", id = "usernameTb", placeholder = "Enter your username" })
+            <span class="badge">@Html.ValidationMessageFor(model => model.UserName) </span>
+        </div>
+
+        <div class="form-group">
+            <label for="passwordTb">@Html.LabelFor(model => model.Password) <span class="glyphicon glyphicon-question-sign"></span></label>
+
+            @Html.TextBoxFor(model => model.Password, new { @class = "form-control input-lg text-center", id = "passwordTb", placeholder = "Enter your account password", type = "password" })
+
+            <span class="badge">@Html.ValidationMessageFor(model => model.Password) </span>
+        </div>
+
+        <p>
+            <button class="btn btn-lg btn-primary">Log On</button>
+        </p>
+    }
+
+    <div>
+        <p>Don't have an account yet? <a href="/Account/Register">Join Now</a></p>
+    </div>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-3 col-xs-12">
+
+</div>

@@ -1,0 +1,14 @@
+﻿@if (Request.IsAuthenticated && User.IsInRole("admin"))
+{
+    <p> Welcome @User.Identity.Name! | <a href="/Admin"><span class="fa fa-cogs"></span> Go to Admin Area</a> | <a href="/Account/LogOff"><span class="glyphicons glyphicons-exit"></span> Log Off</a> </p>
+}
+else if (Request.IsAuthenticated && !User.IsInRole("admin"))
+{
+    <p> Welcome @User.Identity.Name <span class="glyphicons glyphicons-user"></span>! | <a href="/Dashboard"><span class="fa fa-cogs"></span> Manage Account</a> | <a href="/Account/LogOff"><span class="glyphicons glyphicons-exit"></span> Log Off</a> </p>
+}
+else
+{
+    <p>
+        Already have account? <a href="/Account/LogOn"><span class="glyphicons glyphicons-door"></span> Log On</a>
+    </p>
+}

@@ -1,0 +1,92 @@
+﻿@model EReceipt.Model.Profile
+
+@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_Account.cshtml";
+}
+
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="form-group">
+            <label for="usernameTb">UserName <span class="glyphicon glyphicon-question-sign"></span></label>
+
+            <input class="form-control input-lg" type="text" id="usernameTb" name="Username" placeholder="Enter desired username"/>
+            <span class="badge"> </span>
+        </div>
+
+        <div class="form-group">
+            <label for="emailTb"> Email <span class="glyphicon glyphicon-question-sign"></span></label>
+
+            @Html.TextBoxFor(model => model.Email, new { @class = "form-control input-lg", id = "emailTb", placeholder = "Enter your email address", type = "email" })
+            <span class="badge">@Html.ValidationMessageFor(model => model.Email) </span>
+        </div>
+
+        <div class="form-group">
+            <label for="passwordTb">Password <span class="glyphicon glyphicon-question-sign"></span></label>
+
+            <input class="form-control input-lg" type="password" id="passwordTb" name="Password" placeholder="Enter desired password"/>
+            <span class="badge"> </span>
+        </div>
+
+        <div class="form-group">
+            <label for="conPasswordTb">Confirm Password <span class="glyphicon glyphicon-question-sign"></span></label>
+
+            <input class="form-control input-lg" type="password" id="conPasswordTb" name="ConPassword" placeholder="Enter to confirm password"/>
+            <span class="badge"> </span>
+        </div>
+    </div>
+    
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="form-group">
+            <label for="firstnameTb">Firstname <span class="glyphicon glyphicon-question-sign"></span></label>
+
+            @Html.TextBoxFor(model => model.Firstname, new {@class = "form-control input-lg", id = "firstnameTb", placeholder = "Firstname", type = "text"})
+            <span class="badge">@Html.ValidationMessageFor(model => model.Firstname) </span>
+        </div>
+            
+        <div class="form-group">
+            <label for="middlenameTb">Middlename <span class="glyphicon glyphicon-question-sign"></span></label>
+
+            @Html.TextBoxFor(model => model.Middlename, new {@class = "form-control input-lg", id = "middlenameTb", placeholder = "Middlename", type = "text"})
+            <span class="badge">@Html.ValidationMessageFor(model => model.Middlename) </span>
+        </div>
+
+        <div class="form-group">
+            <label for="lastnameTb">Lastname <span class="glyphicon glyphicon-question-sign"></span></label>
+
+            @Html.TextBoxFor(model => model.Lastname, new {@class = "form-control input-lg", id = "lastnameTb", placeholder = "Lastname", type = "text"})
+            <span class="badge">@Html.ValidationMessageFor(model => model.Lastname) </span>
+        </div>
+            
+        <div class="form-group">
+            <label for="phoneTb">Telephone <span class="glyphicon glyphicon-question-sign"></span></label>
+
+            @Html.TextBoxFor(model => model.Phone, new {@class = "form-control input-lg", id = "phoneTb", placeholder = "2348021234567"})
+            <span class="badge">@Html.ValidationMessageFor(model => model.Phone) </span>
+        </div>
+    </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-3 col-xs-12">
+
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-3 col-xs-12">
+            <p>
+                <button class="btn btn-lg btn-primary">Register Now</button>
+            </p>
+            <div>
+                <p>Already own an account? <a href="/Account/LogOn">Log On Here</a> </p>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-3 col-xs-12">
+
+        </div>
+        
+}
+
+

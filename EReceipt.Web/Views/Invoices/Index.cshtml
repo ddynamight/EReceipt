@@ -1,0 +1,81 @@
+﻿@model IEnumerable<EReceipt.Model.Invoice>
+
+
+@{
+    ViewBag.Title = "Invoices";
+    Layout = "~/Views/Shared/_Users.cshtml";
+}
+
+
+<div class="container">
+    <table class="table table-responsive table-striped">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Payment ID</th>
+                <th>Paid By</th>
+                <th>Date Paid</th>
+                <th>Company Paid To</th>
+                <th class="text-right">Amount Paid in &#8358;aira </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.OrderBy(e => e.Name))
+            {
+            <tr>
+                <td>
+                    <a class="btn btn-primary" href="/Invoice/Details/@item.Id">View Details</a>
+                </td>
+                <td>
+                    @item.Id
+                </td>
+                <td>
+                    @item.Name
+                </td>
+                <td>
+                    @item.Date.ToLongDateString()
+                </td>
+                <td>
+                    @item.Company.Name
+                </td>
+                <td class="text-right">
+                    @item.Amount.ToString("###,###,###,###")
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+
+
+<div id="responseDiv">
+    @*<input type="text" id="responseTb" />*@
+</div>
+
+<script type="text/javascript">
+
+    window.onload = init.GetInvoice();
+
+    function GetInvoice() {
+        var xhttp = new XMLHttpRequest();
+
+        var defaultUrl = "http://localhost:8087/api";
+
+        var responseTb = $("responseTb");
+
+        var invoiceUrl = defaultUrl + "/invoices";
+
+        xhttp.open("GET", invoiceUrl, false);
+        xhttp.setRequestHeader("Content-Type", "application/json");
+        xhttp.send();
+
+        var response = JSON.parse(xhttp.responseText);
+
+        
+
+        responseTb.value = response.data.translations[0].translatedText;
+        responseTb.innerText = response.data.translations[0].translatedText;
+    }
+
+</script>

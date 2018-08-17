@@ -1,0 +1,128 @@
+﻿@{
+    ViewBag.Title = "Dashboard";
+    ViewBag.BodyId = "home";
+    Layout = "~/Areas/Admin/Views/Shared/_Admin.cshtml";
+}
+
+
+<div id="dashCon">
+    <div id="dashboard">
+        <div>
+            <p><span class="glyphicons glyphicons-mixed-buildings"></span> Companies</p>
+            <h2>@ViewData["companyCount"]</h2>
+            <p>registered companies</p>
+        </div>
+
+        <div>
+            <p><span class="glyphicons glyphicons-invoice"></span> Invoices</p>
+            <h2>@ViewData["invoiceCount"]</h2>
+            <p>invoices paied</p>
+        </div>
+
+        <div>
+            <p><span class="glyphicons glyphicons-group"></span> Users</p>
+            <h2>@ViewData["userCount"]</h2>
+            <p>registered</p>
+        </div>
+
+        <div>
+            <p><span class="glyphicons glyphicons-blog"></span> Blogs</p>
+            <h2>@ViewData["blogCount"]</h2>
+            <p>blogs posted</p>
+        </div>
+    </div>
+
+    <div id="dashNav">
+        <div>
+            <a class="btn btn-lg btn-primary" href="/Admin/Categories/Create"> <span class="glyphicons glyphicons-mixed-buildings"></span> Add Category </a>
+        </div>
+
+        <div>
+            <a class="btn btn-lg btn-warning" href="/Admin/Jobs/Create"> <span class="glyphicons glyphicons-briefcase"></span> Post Job</a>
+        </div>
+
+        <div>
+            <a class="btn btn-lg btn-danger" href="/Admin/Users/Create"> <span class="fa fa-group"></span> Add User </a>
+        </div>
+
+        <div>
+            <a class="btn btn-lg btn-info" href="/Admin/Adverts/Create"> <span class="fa fa-bullhorn"></span> Add Advert </a>
+        </div>
+
+        <div>
+            <a class="btn btn-lg btn-success" href="/Admin/Blogs/Create"> <span class="glyphicons glyphicons-mixed-buildings"></span> Add Blog </a>
+        </div>
+    </div>
+
+    <div id="tabCon">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#advertstab" aria-controls="advertstab" role="tab" data-toggle="tab">Adverts</a></li>
+            <li role="presentation"><a href="#schoolstab" aria-controls="orderstab" role="tab" data-toggle="tab">Schools</a></li>
+            <li role="presentation"><a href="#jobstab" aria-controls="jobstab" role="tab" data-toggle="tab">Jobs</a></li>
+            <li role="presentation"><a href="#orderstab" aria-controls="orderstab" role="tab" data-toggle="tab">Orders</a></li>
+            <li role="presentation"><a href="#paymentstab" aria-controls="paymentstab" role="tab" data-toggle="tab">Payments</a></li>
+            <li role="presentation"><a href="#reviewstab" aria-controls="reviewstab" role="tab" data-toggle="tab">Reviews</a></li>
+            <li role="presentation"><a href="#blogstab" aria-controls="blogstab" role="tab" data-toggle="tab">Blogs</a></li>
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="advertstab">
+
+                <h2>Adverts Stats</h2>
+
+            </div>
+
+            <div role="tabpanel" class="tab-pane" id="schoolstab">
+
+                <h2>Schools Stats</h2>
+
+            </div>
+            <div role="tabpanel" class="tab-pane" id="jobstab">
+
+                <h2>Jobs Stats</h2>
+
+            </div>
+            <div role="tabpanel" class="tab-pane" id="orderstab">
+
+                <h2>Orders</h2>
+
+            </div>
+            <div role="tabpanel" class="tab-pane" id="paymentstab">
+
+                <h2>Payments</h2>
+
+            </div>
+            <div role="tabpanel" class="tab-pane" id="reviewstab">
+
+                <h2>Reviews</h2>
+
+            </div>
+            <div role="tabpanel" class="tab-pane" id="blogstab">
+
+                <h2>Blogs</h2>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="stats">
+        <div>
+            <div>
+                
+            </div>
+        </div>
+
+        <div>
+            <div>
+
+            </div>
+        </div>
+
+        <div>
+            <div>
+
+            </div>
+        </div>
+    </div>
+</div>

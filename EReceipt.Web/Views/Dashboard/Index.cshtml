@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewBag.Title = "Dashboard";
+    Layout = "~/Views/Shared/_Users.cshtml";
+}
+
+
+
+<div id="dashCon">
+    <div class="container">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <div class="bg-primary">
+                <a href="/Companies">
+                    <h2>@ViewData["Companies"]</h2>
+                    <p> <span class="glyphicons glyphicons-mixed-buildings"></span> companies registered</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <div class="bg-info">
+                <a href="/Invoices">
+                    <h2>@ViewData["Invoice"]</h2>
+                    <p><span class="glyphicons glyphicons-invoice"></span> invoices generated</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <div class="bg-danger">
+                <a href="/Companies/Create">
+                    <h2>+ Company</h2>
+                    <p>list more companies</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+

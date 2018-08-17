@@ -1,0 +1,499 @@
+﻿section #innerHeader {
+    background-attachment: fixed;
+    background-color: rgba(255, 255, 255, 1);
+    background-image: url('/Content/images/listImages.png');
+    border-bottom: 3px solid rgba(0, 136, 206, 1);
+    clear: both;
+    height: auto;
+    min-height: 150px;
+    padding: 2.5em 0;
+    width: 100%;
+}
+
+section #innerHeader .container-fluid > h2 {
+    color: rgba(255, 255, 255, 1);
+    font-family: inderRegular;
+    font-size: 2.5em;
+    margin: 0 0 0 1em; 
+    padding: 0;
+}
+
+section #innerHeader .container-fluid > p {
+    color: rgba(255, 255, 255, 1);
+    font-family: inderRegular;
+    font-size: 1.5em;
+    margin-bottom: 0.2em; 
+    padding: 0.5em;
+}
+
+
+section #innerHeader .container-fluid div[class*=col-] span[class*=img-] {
+    background-color: rgba(0, 136, 206, 1);
+    border: 2px solid rgba(255, 255, 255, 1);
+    font-size: 5em;
+    margin-bottom: 0.2em; 
+    padding: 0.5em;
+}
+
+section #innerHeader .container-fluid div[class*=col-] img {
+    border: 2px solid rgba(255, 255, 255, 1);
+    margin: 0.2em auto 1em auto;
+} 
+
+section #innerHeader .container-fluid div[class*=col-] h2 {
+    color: rgba(255, 255, 255, 1);
+    font-family: inderRegular;
+    font-size: 2em;
+}
+
+section #innerHeader .container-fluid div[class*=col-] h2 span {
+    color: rgba(0, 136, 206, 1);
+}
+
+section #innerHeader .container-fluid div[class*=col-] h3 {
+    background-color: rgba(0, 136, 206, 1);
+    border: 2px solid rgba(255, 255, 255, 1);
+    border-radius: 0.5em;
+    color: rgba(255, 255, 255, 1);
+    font-family: inderRegular;
+    padding: 0.2em;
+    text-align: center;
+}
+
+section #innerHeader .container-fluid div[class*=col-] h4 {
+    color: rgba(255, 255, 255, 1);
+}
+
+section #innerHeader .container-fluid div[class*=col-] h4 span {
+    color: rgba(0, 136, 206, 1);
+    padding: 0.1em;
+}
+
+section #innerHeader .container-fluid div[class*=col-] p {
+    color: rgba(255, 255, 255, 1);
+    font-size: 1.1em;
+    text-align: justify;
+}
+
+
+section #innerHeader .container-fluid div[class*=col-] .flexCon {
+    clear: both;
+    display: block;
+    width: 100%;
+}
+
+section #innerHeader .container-fluid div[class*=col-] .flexCon div {
+    flex: 1;
+    float: left;
+    padding: 0.25em;
+}
+
+section #innerHeader .container-fluid div[class*=col-] .flexCon div h4 {
+    font-size: 1.5em;
+    font-family: inderRegular;
+    text-transform: uppercase;
+}
+
+
+section #innerCon {
+    clear: both;
+    height: auto;
+    min-height: 200px;
+    padding: 2.5em 0;
+    width: 100%;
+}
+
+section #innerCon .container-fluid div[class*=col-] div {
+    background-color: rgba(255, 255, 255, 1);
+    height: auto;
+    min-height: 200px;
+}
+
+section #innerCon .container-fluid div[class*=col-] div#filter {
+    background-color: rgba(255, 255, 255, 1);
+    height: auto;
+    margin-bottom: 2em;
+    min-height: 200px;
+    padding: 0 0 1em 0;
+}
+
+section #innerCon .container-fluid div[class*=col-] div#filter h2 {
+    background-color: rgba(0, 136, 206, 1);
+    color: rgba(255, 255, 255, 1);
+    font-family: inderRegular;
+    font-size: 1.5em;
+    margin: 0 0 1em 0;
+    padding: 0.2em;
+}
+
+section #innerCon .container-fluid div[class*=col-] div#filter select {
+    border: 1px solid rgba(0, 136, 206, 1);
+    clear: both;
+    display: block;
+    font-family: inderRegular;
+    font-size: 1.1em;
+    margin: 0.5em auto;
+    padding: 0.5em;
+    width: calc(100% - 20%);
+}
+
+
+section #innerCon .container-fluid div[class*=col-] div#filter button {
+    background-color: rgba(0, 136, 206, 1);
+    border: 1px solid rgba(0, 136, 206, 1);
+    clear: both;
+    color: rgba(255, 255, 255, 1);
+    display: block;
+    font-family: inderRegular;
+    font-size: 1.1em;
+    margin: 0.5em auto;
+    padding: 0.5em;
+    width: calc(100% - 20%);
+}
+
+section #innerCon .container-fluid div[class*=col-] div#filter button:hover {
+    background-color: transparent !important;
+    color: rgba(0, 136, 206, 1);
+}
+
+/* HOSTEL LIST
+-------------------------------------*/
+
+.schoolList {
+    background-color: transparent !important;
+    padding: 0 0.5em 2em 0.5em;
+}
+
+.schoolList > div {
+    border-bottom: 2px solid rgba(0, 136, 206, 1);
+    margin-bottom: 2em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+.schoolList > div[class*=col-] > div[class*=col-] > img {
+    margin: auto;
+}
+
+.schoolList div[class*=col-] div.schoolListDetails h2 {
+    color: rgba(0, 0, 0, 1);
+    font-family: inderRegular;
+    font-size: 1.8em;
+    padding-bottom: 0.3em;
+}
+
+.schoolList div[class*=col-] div.schoolListDetails h2 span {
+    color: rgba(0, 136, 206, 1);
+}
+
+
+.schoolList div[class*=col-] div.schoolListDetails h4 {
+    color: rgba(100, 100, 100, 1);
+    font-size: 1.3em;
+    padding-bottom: 0.2em;
+}
+
+.schoolList div[class*=col-] div.schoolListDetails h4 span {
+    color: rgba(0, 136, 206, 1)
+}
+
+.schoolList div[class*=col-] div.schoolListDetails a {
+    border: 2px solid rgba(0, 136, 206, 1);
+    color: rgba(0, 136, 206, 1)
+}
+
+.schoolList div[class*=col-] div.schoolListDetails a:hover {
+    background-color: rgba(0, 136, 206, 1);
+    border: 2px solid rgba(0, 136, 206, 1);
+    color: rgba(255, 255, 255, 1)
+}
+
+
+/* Style for School Listing Ends Here
+--------------------------------------*/
+
+
+
+section #detailsHeader {
+    background-attachment: fixed;
+    background-color: rgba(255, 255, 255, 1);
+    background-image: url('/Content/images/listImages.png');
+    border-bottom: 3px solid rgba(0, 136, 206, 1);
+    clear: both;
+    height: auto;
+    min-height: 200px;
+    padding: 2.5em 0;
+    width: 100%;
+}
+
+section #detailsHeader .container-fluid div[class*=col-] span[class*=img-] {
+    background-color: rgba(0, 136, 206, 1);
+    border: 2px solid rgba(255, 255, 255, 1);
+    font-size: 5em;
+    margin-bottom: 0.2em; 
+    padding: 0.5em;
+} 
+
+section #detailsHeader .container-fluid div[class*=col-] h2 {
+    color: rgba(255, 255, 255, 1);
+    font-family: inderRegular;
+    font-size: 2em;
+}
+
+section #detailsHeader .container-fluid div[class*=col-] h2 span {
+    color: rgba(0, 136, 206, 1);
+}
+
+
+section #detailsHeader .container-fluid div[class*=col-] h3 {
+    background-color: rgba(0, 136, 206, 1);
+    border: 2px solid rgba(255, 255, 255, 1);
+    border-radius: 0.5em;
+    color: rgba(255, 255, 255, 1);
+    font-family: inderRegular;
+    padding: 0.2em;
+    text-align: center;
+}
+
+section #detailsHeader .container-fluid div[class*=col-] h4 {
+    color: rgba(255, 255, 255, 1);
+}
+
+section #detailsHeader .container-fluid div[class*=col-] h4 span {
+    color: rgba(0, 136, 206, 1);
+    padding: 0.1em;
+}
+
+section #detailsHeader .container-fluid div[class*=col-] p {
+    color: rgba(255, 255, 255, 1);
+    font-size: 1.1em;
+    text-align: justify;
+}
+
+section #detailsHeader .container-fluid div[class*=col-] .flexCon {
+    clear: both;
+    display: flex;
+    width: 100%;
+}
+
+section #detailsHeader .container-fluid div[class*=col-] .flexCon div {
+    flex: 1;
+}
+
+section #detailsHeader .container-fluid div[class*=col-] .flexCon div h4 {
+    font-size: 2em;
+}
+
+
+
+
+
+section #detailsCon {
+    clear: both;
+    height: auto;
+    min-height: 200px;
+    padding: 2.5em 0;
+    width: 100%;
+}
+
+section #detailsCon .container-fluid div[class*=col-] div {
+    background-color: rgba(255, 255, 255, 1);
+    height: auto;
+    min-height: 200px;
+}
+
+section #detailsCon .container-fluid div[class*=col-] div#filter {
+    background-color: rgba(255, 255, 255, 1);
+    height: auto;
+    min-height: 400px;
+}
+
+section #detailsCon .container-fluid div[class*=col-] div#filter h2 {
+    background-color: rgba(0, 136, 206, 1);
+    color: rgba(255, 255, 255, 1);
+    font-family: inderRegular;
+    font-size: 1.5em;
+    padding: 0.2em;
+}
+
+section #detailsCon .container-fluid div[class*=col-] div#filter select {
+    clear: both;
+    display: block;
+    font-family: inderRegular;
+    font-size: 1.1em;
+    padding: 0.5em;
+    width: 100%;
+}
+
+section #detailsCon .container-fluid div[class*=col-] div.detailsItem {
+    clear: both;
+    height: auto;
+    margin-bottom: 2.5em;
+    min-height: 200px;
+    padding-bottom: 2em;
+}
+
+section #detailsCon .container-fluid div[class*=col-] div.detailsItem div {
+    background-color: transparent !important;
+}
+
+section #detailsCon .container-fluid div[class*=col-] div.detailsItem div.container-fluid {
+    min-height: 100px !important;
+}
+
+section #detailsCon .container-fluid div[class*=col-] div.detailsItem form {
+    padding: 1.5em;
+}
+
+section #detailsCon .container-fluid div[class*=col-] div.detailsItem form .form-group {
+    min-height: 30px !important;
+}
+
+section #detailsCon .container-fluid div[class*=col-] div.detailsItem .ratings {
+    border-bottom: 2px solid rgba(0, 136, 206, 1);
+    height: auto;
+    margin: 0;
+    min-height: 80px !important;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+section #detailsCon .container-fluid div[class*=col-] div.detailsItem .ratings div[class*=col-] img {
+    height: 80px;
+}
+
+section #detailsCon .container-fluid div[class*=col-] div.detailsItem .ratings div[class*=col-] h4 {
+    color: rgba(0, 136, 206, 1);
+    font-family: inderRegular;
+    font-weight: 900;
+}
+
+section #detailsCon .container-fluid div[class*=col-] div.detailsItem h2 {
+    background-color: rgba(0, 136, 206, 1);
+    color: rgba(255, 255, 255, 1);
+    font-family: inderRegular;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    padding: 0.5em;
+    text-align: left;
+}
+
+section #detailsCon .container-fluid div[class*=col-] div.detailsItem div[class*=col-] {
+    min-height: 40px;
+}
+
+section #detailsCon .container-fluid div[class*=col-] div.detailsItem div[class*=col-] h3 {
+    color: rgba(100, 100, 100, 1);
+    font-family: inderRegular;
+    font-size: 1.3em;
+}
+
+section #detailsCon .container-fluid div[class*=col-] div.detailsItem div[class*=col-] h3 span {
+    color: rgba(0, 136, 206, 1);
+    padding: 0.1em 0;
+}
+
+section #detailsCon .container-fluid div[class*=col-] div.detailsItem div#share {
+    clear: both;
+    display: flex;
+    height: auto;
+    min-height: 100px;
+}
+
+section #detailsCon .container-fluid div[class*=col-] div.detailsItem div#share a {
+    color: rgba(100, 100, 100, 1); 
+    flex: 1;
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+}
+
+section #detailsCon .container-fluid div[class*=col-] div.detailsItem div#share a:hover {
+    color: rgba(0, 136, 206, 1);
+}
+
+section #detailsCon .container-fluid div[class*=col-] div.detailsItem div#share a span {
+    clear: both;
+    font-size: 4em;
+    padding: 0.25em;
+}
+
+section #detailsCon .container-fluid div[class*=col-] div.detailsItem div#share a label {
+    clear: both;
+    font-size: 0.75em;
+    padding: 0.25em;
+}
+
+
+
+
+section #detailsCon .container-fluid div[class*=col-] div.detailsSideItem {
+    clear: both;
+    margin-bottom: 2.5em;
+    padding-bottom: 0;
+}
+
+section #detailsCon .container-fluid div[class*=col-] div.detailsSideItem h2 {
+    background-color: rgba(0, 136, 206, 1);
+    color: rgba(255, 255, 255, 1);
+    font-family: inderRegular;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    padding: 0.5em;
+    text-align: left;
+}
+
+section #detailsCon .container-fluid div[class*=col-] div.detailsSideItem form {
+    padding: 0.5em 1em;
+}
+
+section #detailsCon .container-fluid div[class*=col-] div.detailsSideItem form div {
+    min-height: 30px;
+    padding: 0.5em 1em;
+}
+
+section #detailsCon .container-fluid div[class*=col-] div.detailsSideItem form div input {
+    border: 1px solid rgba(0, 136, 206, 0.5);
+}
+
+section #detailsCon .container-fluid div[class*=col-] div.detailsSideItem .similarSchool {
+    border-bottom: 1px solid rgba(0, 136, 206, 1);
+    clear: both;
+    height: auto;
+    min-height: 80px !important;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+section #detailsCon .container-fluid div[class*=col-] div.detailsSideItem .similarSchool:last-child {
+    border-bottom: none;
+}
+
+section #detailsCon .container-fluid div[class*=col-] div.detailsSideItem .similarSchool div {
+    min-height: 80px;
+}
+
+section #detailsCon .container-fluid div[class*=col-] div.detailsSideItem .similarSchool div img {
+    min-height: 90px;
+    min-width: 90px;
+}
+
+section #detailsCon .container-fluid div[class*=col-] div.detailsSideItem .similarSchool div.similarSchoolDetails a {
+    color: rgba(0, 136, 206, 1);
+    text-decoration: none;
+}
+
+section #detailsCon .container-fluid div[class*=col-] div.detailsSideItem .similarSchool div.similarSchoolDetails a:hover {
+    text-decoration: none;
+}
+
+section #detailsCon .container-fluid div[class*=col-] div.detailsSideItem .similarSchool div.similarSchoolDetails a h4 {
+    font-family: inderRegular;
+    font-size: 1.2em;
+    padding: 0.2em;
+}
+
+
+
+/* SCHOOL DETAILS
+-------------------------------------*/

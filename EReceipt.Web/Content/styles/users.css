@@ -1,0 +1,113 @@
+﻿
+
+
+body#home aside nav > a#home,
+body#schools aside nav > a#schools,
+body#jobs aside nav > a#jobs,
+body#adverts aside nav > a#adverts,
+body#payments aside nav > a#payments,
+body#tutor aside nav > a#tutor,
+body#profile aside nav > a#profile,
+body#blogs aside nav > a#blogs
+{
+    background-color: rgba(10, 10, 10, 0.5);
+}
+
+
+.bg-danger {
+    background-color: rgba(220, 10, 100, 1);
+}
+
+.bg-info {
+    background-color: rgba(0, 200, 100, 1);
+}
+
+
+#innerStaticHeader {
+    background-attachment: scroll;
+    background-image: url('/Content/images/innerBanner.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 150px;
+    width: 100%;
+}
+
+
+#innerNav {
+    background-color: rgba(255, 255, 255, 1);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+#innerNav .container ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+}
+
+#innerNav .container ul li {
+    flex: 1;
+}
+
+#innerNav .container ul li a {
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+    color: rgba(0, 145, 234, 1);
+    display: block;
+    font-family: 'Segoe UI';
+    font-size: 1.1em;
+    padding: 0.75em 0;
+    text-align: left;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#innerNav .container ul li a:hover {
+    border-bottom: 2px solid rgba(0, 145, 234, 1);
+    color: rgba(0, 145, 234, 1);
+}   
+
+
+
+
+
+#innerCon {
+    clear: both;
+    height: auto;
+    min-height: 50vh;
+    padding: 2em 0;
+}
+
+
+#innerCon #dashCon .container div[class*=col] div {
+    box-shadow: 0.2em 0.2em rgba(100, 100, 100, 0.5);
+    clear: both;
+    padding: 0.5em 1em;
+}
+
+
+#innerCon #dashCon .container div[class*=col] div a {
+    clear: both;
+    color: rgba(255, 255, 255, 1);
+    height: auto;
+    margin: 0;
+    padding: 0.5em;
+    text-decoration: none;
+    width: 100%;
+}
+
+#innerCon #dashCon .container div[class*=col] div a h2 {
+    font-family: inderRegular;
+    font-size: 4em;
+}
+
+#innerCon #dashCon .container div[class*=col] div a p {
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+#innerCon #dashCon .container div[class*=col] div:hover {
+    box-shadow: 0.2em 0.2em rgba(10, 10, 10, 1);
+}
+

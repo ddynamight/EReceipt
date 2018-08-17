@@ -1,0 +1,345 @@
+﻿
+@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div id="banner">
+    <div class="container">
+        <div class="type-wrap">
+            <div id="typed-strings">
+                <p>Value,</p>
+                <p>Efficiency,</p>
+                <p>Sales!</p>
+            </div>
+
+            <h2> Increase your <span id="typed" style="white-space: pre;"></span></h2>
+        </div>
+
+        
+        <p>Over <span>@ViewData["invoiceCount"]</span> receipts generated! </p>
+    </div>
+    <div class="container text-center">
+        <a class="btn btn-lg btn-primary" href="/Account/LogOn">Get Started</a>
+    </div>
+</div>
+
+<div id="indexCategories">
+    <div>
+        <a href="#">
+            <span class="fa fa-laptop"></span> <br>
+            <label>Information Tech</label>
+        </a>
+    </div>
+
+    <div>
+        <a href="#">
+            <span class="fa fa-bank"></span> <br>
+            <label>Banking</label>
+        </a>
+    </div>
+
+    <div>
+        <a href="#">
+            <span class="glyphicons glyphicons-satellite-dish"></span> <br>
+            <label>Telecommunications</label>
+        </a>
+    </div>
+
+    <div>
+        <a href="#">
+            <span class="fa fa-hospital-o"></span> <br>
+            <label>Health</label>
+        </a>
+    </div>
+
+    <div>
+        <a href="#">
+            <span class="fa fa-car"></span> <br>
+            <label>Automobile</label>
+        </a>
+    </div>
+
+    <div>
+        <a href="#">
+            <span class="glyphicons glyphicons-fast-food"></span> <br>
+            <label>Foods Services</label>
+        </a>
+    </div>
+</div>
+
+
+<div id="indexWhat">
+    <div class="container">
+        <h2>What is E-Receipt?</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.</p>
+    </div>
+</div>
+
+
+
+
+<div id="indexWhy">
+    <div class="container">
+        <h2>Why people Choose Us</h2>
+    </div>
+    <div class="container">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <h2>
+                <span class="glyphicons glyphicons-mixed-buildings"></span> Verified Businesses
+            </h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa.</p>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <h2>
+                <span class="fa fa-lock"></span> Secured Payments
+            </h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa.</p>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <h2>
+                <span class="fa fa-newspaper-o"></span> Sales Blog
+            </h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa.</p>
+        </div>
+    </div>
+</div>
+
+
+<div id="indexCareers">
+    <div class="container">
+        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+            <h2>Start Building Your Own Business</h2>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <a class="btn btn-lg btn-success">Get Started</a>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="indexTestimonials">
+    <div class="container">
+        <h2>What People are Saying</h2>
+    </div>
+
+    <div class="container">
+        <div id="testCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#testCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#testCarousel" data-slide-to="1"></li>
+                <li data-target="#testCarousel" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="container-fluid item active">
+                    <div class="col-lg-4 col-md-4 col-sm-5 col-xs-12 text-center">
+                        <img class="img-circle" src="/Content/images/testImage1.png" />
+                        <h2>Ismail Umar</h2>
+                        <h4>CTO, CINSOL</h4>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-7 col-xs-12">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada.</p>
+                    </div>
+                </div>
+                <div class="container-fluid item">
+                    <div class="col-lg-4 col-md-4 col-sm-5 col-xs-12 text-center">
+                        <img class="img-circle" src="/Content/images/testImage1.png" />
+                        <h2>Ismail Umar</h2>
+                        <h4>CTO, CINSOL</h4>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-7 col-xs-12">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada.</p>
+                    </div>
+                </div>
+                <div class="container-fluid item">
+                    <div class="col-lg-4 col-md-4 col-sm-5 col-xs-12 text-center">
+                        <img class="img-circle" src="/Content/images/testImage1.png" />
+                        <h2>Ismail Umar</h2>
+                        <h4>CTO, CINSOL</h4>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-7 col-xs-12">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Controls -->
+            <a class="left carousel-control" href="#testCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#testCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<div id="indexSuccess">
+    <div class="container">
+        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+            <h2>User Success Story</h2>
+
+            <h3>Omolara Gbenga</h3>
+            <h4>Snr. Manager <span>Opec Motors</span></h4>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.</p>
+
+            <a href="#">Read More</a>
+        </div>
+
+        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+            <img class="img-responsive right" src="/Content/images/userSuccess.png" />
+        </div>
+    </div>
+</div>
+
+
+<div id="indexBlogs">
+    <div class="container">
+        <h2>Latest Blog Post</h2>
+    </div>
+
+    <div class="container">
+        <div class="col-lg-5">
+            <div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<!--
+Other Codes
+-->
+
+
+
+<script>
+    $(function() {
+
+        $("#typed").typed({
+            // strings: ["Typed.js is a <strong>jQuery</strong> plugin.", "It <em>types</em> out sentences.", "And then deletes them.", "Try it out!"],
+            stringsElement: $('#typed-strings'),
+            typeSpeed: 100,
+            backDelay: 2000,
+            loop: true,
+            contentType: 'html', // or text
+            // defaults to false for infinite loop
+            loopCount: false,
+            callback: function() { foo(); },
+            resetCallback: function() { newTyped(); }
+        });
+
+        $(".reset").click(function() {
+            $("#typed").typed('reset');
+        });
+
+    });
+
+    function newTyped() { /* A new typed object */ }
+
+    function foo() { console.log("Callback"); }
+
+</script>
+
+<style>
+    /* code for animated blinking cursor */
+    .typed-cursor {
+        opacity: 1;
+        font-family: inderRegular;
+        font-weight: 100;
+        -webkit-animation: blink 0.7s infinite;
+        -moz-animation: blink 0.7s infinite;
+        -ms-animation: blink 0.7s infinite;
+        -o-animation: blink 0.7s infinite;
+        animation: blink 0.7s infinite;
+    }
+
+    #typed {
+        font-family: inderRegular;
+        font-weight: 900;
+    }
+
+    @@-keyframes blink {
+        0% {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @@-webkit-keyframes blink {
+        0% {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @@-moz-keyframes blink {
+        0% {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @@-ms-keyframes blink {
+        0% {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @@-o-keyframes blink {
+        0% {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+</style>

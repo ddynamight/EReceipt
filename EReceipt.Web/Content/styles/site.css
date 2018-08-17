@@ -1,0 +1,625 @@
+﻿body, header, main, article, aside, div, img, h1, h2, h3, h4, h5, h6, p, a, hr, ul, ol, li, table, tr, th, td, form, fieldset, legend, input
+{
+	margin: 0;
+	padding: 0;
+}
+
+/* RESET STYLES END HERE
+-------------------------------------------------------------*/
+
+body
+{
+    background-color: rgba(235, 235, 235, 1);
+	font-family: 'Segoe UI';
+}
+
+header {
+    border-top: 1px solid rgba(255, 255, 255, 1);
+    background-color: transparent;
+    clear: both;
+    color: rgba(255, 255, 255, 1);
+    height: auto;
+    margin: 0;
+    min-height: 50px;
+    padding: 1em 0 0 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+header .container-fluid {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+header .container-fluid div[class*=col-] {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+header .container-fluid div[class*=col-] h1 {
+    font-family: inderRegular;
+    font-size: 3em;
+    padding: 0.2em 0;
+}
+
+header .container-fluid div[class*=col-] h1 span {
+    float: left;
+    padding: 0.3em 0 0 0;
+}
+
+header .container-fluid div[class*=col-] h1 a {
+	text-align: left;
+	text-decoration: none;
+}
+
+header .container-fluid div[class*=col-] h1 a:hover {
+    text-decoration: none;
+}
+
+header .container-fluid div[class*=col-] h1 a img {
+    float: left;
+    max-height: 70px;
+    padding: 0 0.2em;
+}
+
+
+header .container-fluid div[class*=col-] p {
+    font-size: 1.0em;
+    font-weight: 900;
+    padding: 0 1.5em;
+}
+
+
+header .container-fluid div[class*=col-] nav {
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+header .container-fluid div[class*=col-] nav a {
+    background-color: transparent !important;
+    color: rgba(255, 255, 255, 1);
+    font-family: inderRegular;
+    font-size: 1.2em;
+    margin: 2.1em 0.7em;
+    padding: 0;
+    text-decoration: none;
+}
+
+header .container-fluid div[class*=col-] nav a:hover {
+    background-color: transparent !important;
+	color: rgba(255, 255, 255, 1);
+}
+
+
+/* HEADER STYLES END HERE
+-------------------------------------------------------------*/
+
+
+
+main
+{
+	clear: both;
+	height: auto;
+    margin: 0;
+	min-height: 80vh;
+    padding: 0;
+	width: 100%;
+}
+
+
+main #banner {
+    background-image: url('/Content/images/banner.png');
+    background-origin: border-box;
+    background-position: center top;
+    background-repeat: no-repeat;
+    clear: both;
+    color: rgba(255, 255, 255, 1);
+    height: auto;
+    min-height: 80vh;
+    padding: 10em 0 0 0;
+    text-align: center;
+    width: 100%;
+}
+
+main #banner .container {
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+main #banner .container h2 {
+    font-family: inderRegular;
+    font-size: 5em;
+}
+
+main #banner .container > p {
+    font-family: inderRegular;
+    font-size: 2em;
+}
+
+main #banner .container > p span {
+    color: rgba(0, 145, 234, 1);
+}
+
+main #banner .container div[class*=col] input,
+main #banner .container div[class*=col] select {
+    border: none;
+    border-radius: 0;
+    color: rgba(0, 145, 234, 1);
+    font-family: inderRegular;
+    font-size: 1.25em;
+    width: 100%;
+}
+
+main #banner .container a{
+    border: none;
+    border-radius: 0;
+    font-family: inderRegular;
+    font-size: 1.25em;
+    width: 30%;
+}
+
+/* #Banner Styles End Here
+-------------------------------------------------  */
+
+
+
+main #indexCategories {
+    background-color: rgba(0, 145, 234, 1);
+    clear: both;
+    display: flex;
+    height: auto;
+    min-height: 20vh;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+
+main #indexCategories div {
+    border-right: 1px solid rgba(255, 255, 255, 1);
+    display: block;
+    flex: 1;
+}
+
+main #indexCategories div a {
+    background-color: rgba(0, 145, 234, 1);
+    color: rgba(255, 255, 255, 1);
+    display: block;
+    height: 100%;
+    padding: 0.5em 0;
+    text-decoration: none;
+    width: 100%;
+}
+
+main #indexCategories div a span {
+    clear: both;
+    font-size: 4em;
+    padding: 0.25em 0;
+}
+
+main #indexCategories div a label {
+    clear: both;
+    font-family: inderRegular;
+    font-size: 1.2em;
+    padding: 0;
+}
+
+
+main #indexCategories div a:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* #INDEXCATEGORIES Styles End Here
+-------------------------------------------------  */
+
+
+
+main #indexWhat {
+    background-color: rgba(255, 255, 255, 1);
+    border-bottom: 1px solid rgba(10, 10, 10, 1);
+    clear: both;
+    height: auto;
+    min-height: 35vh;
+    padding: 4em 0;
+    text-align: center;
+    width: 100%;
+}
+
+main #indexWhat .container > h2 {
+    clear: both;
+    font-family: inderRegular;
+    font-size: 2.5em;
+    width: 100%;
+}
+
+main #indexWhat .container > p {
+    clear: both;
+    font-family: inderRegular;
+    font-size: 1.2em;
+    width: 100%;
+}
+
+
+/* #INDEXWHAT Styles End Here
+-------------------------------------------------  */
+
+
+main #indexLatest {
+    background-color: rgba(255, 255, 255, 1);
+    clear: both;
+    height: auto;
+    min-height: 80vh;
+    padding: 4em 0 2em 0;
+    text-align: center;
+    width: 100%;
+}
+
+main #indexLatest .container {
+    padding-bottom: 1.5em;
+    padding-top: 1.5em;
+}
+
+main #indexLatest .container > h2 {
+    clear: both;
+    font-family: inderRegular;
+    font-size: 2.5em;
+    width: 100%;
+}
+
+
+main #indexLatest .container > a {
+    font-family: inderRegular;
+    font-size: 1.2em;
+    padding: 0.5em 1.5em;
+    text-transform: uppercase;
+}
+
+/* #INDEXLATEST Styles End Here
+-------------------------------------------------  */
+
+
+
+main #indexWhy {
+    border-bottom: 1px solid rgba(10, 10, 10, 1);
+    clear: both;
+    height: auto;
+    min-height: 30vh;
+    padding: 3em 0;
+    text-align: center;
+    width: 100%;
+}
+
+main #indexWhy .container {
+    padding-bottom: 3em;
+    padding-top: 0.5em;
+}
+
+main #indexWhy .container > h2 {
+    clear: both;
+    font-family: inderRegular;
+    font-size: 2.5em;
+    width: 100%;
+}
+
+main #indexWhy .container div[class*=col] h2 {
+    clear: both;
+    font-family: 'Segoe UI';
+    font-size: 2em;
+    padding: 0.5em 0;
+    text-align: left;
+    width: 100%;
+}
+
+
+main #indexWhy .container div[class*=col] h2 span {
+    color: rgba(0, 145, 234, 1);
+}
+
+main #indexWhy .container div[class*=col] p {
+    clear: both;
+    font-family: 'Segoe UI';
+    font-size: 1em;
+    text-align: left;
+    width: 100%;
+}
+
+
+
+
+/* #INDEXWHY Styles End Here
+-------------------------------------------------  */
+
+
+
+main #indexCareers {
+    background-attachment: scroll;
+    background-image: url('/Content/images/indexCareer.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid rgba(10, 10, 10, 1);
+    clear: both;
+    height: auto;
+    min-height: 15vh;
+    padding: 3em 0;
+    text-align: center;
+    width: 100%;
+}
+
+main #indexCareers .container div[class*=col] h2 {
+    color: rgba(255, 255, 255, 1);
+    font-family: inderRegular;
+    font-size: 3em;
+}
+
+main #indexCareers .container div[class*=col] a {
+    color: rgba(255, 255, 255, 1);
+    font-family: inderRegular;
+    font-size: 1.5em;
+    padding: 0.5em 1.5em;
+}
+
+
+/* #INDEXCAREER Styles End Here
+-------------------------------------------------  */
+
+
+
+main #indexTestimonials {
+    background-color: rgba(255, 255, 255, 1);
+    clear: both;
+    height: auto;
+    min-height: 60vh;
+    padding: 2.5em 0;
+    text-align: center;
+    width: 100%;
+}
+
+
+main #indexTestimonials .container {
+    padding-bottom: 2em;
+    padding-top: 0.5em; 
+}
+
+
+main #indexTestimonials .container > h2 {
+    font-family: inderRegular;
+    font-size: 2.5em;
+}
+
+main #indexTestimonials .container div[class*=carou] .container-fluid div[class*=col] img {
+    max-height: 120px;
+}
+
+main #indexTestimonials .container div[class*=carou] .container-fluid div[class*=col] p {
+    color: rgba(100, 100, 100, 1);
+    font-family: inderRegular;
+    font-size: 1.2em;
+    font-style: italic;
+    margin: 4em 5em;
+}
+
+main #indexTestimonials .container div[class*=carou] .container-fluid div[class*=col] h2 {
+    color: rgba(50, 50, 50, 1);
+    font-family: inderRegular;
+}
+
+main #indexTestimonials .container div[class*=carou] .container-fluid div[class*=col] h4 {
+    color: rgba(50, 50, 50, 1);
+    font-family: inderRegular;
+}
+
+main #indexTestimonials .container div[class*=carou] a[class*=control] {
+    background: transparent !important;
+    color: rgba(100, 100, 100, 1);
+}
+
+main #indexTestimonials .container div[class*=carou] a.left {
+    float: left;
+    left: 0;
+    position: absolute;
+    z-index: 1000;
+}
+
+main #indexTestimonials .container div[class*=carou] a.right {
+    float: right;
+    right: 0;
+    position: absolute;
+    z-index: 1000;
+}
+
+/* #INDEXTESTIMONIALS Styles End Here
+-------------------------------------------------  */
+
+
+
+main #indexSuccess {
+    background-attachment: scroll;
+    background-image: url('/Content/images/indexSuccess.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    clear: both;
+    height: auto;
+    min-height: 70vh;
+    padding: 2.5em 0;
+    width: 100%;
+}
+
+
+main #indexSuccess .container {
+    padding-bottom: 2em;
+    padding-top: 0.5em; 
+}
+
+
+main #indexSuccess .container div[class*=col] h2 {
+    border-bottom: 1px solid rgba(0, 145, 234, 1);
+    clear: both;
+    color: rgba(255, 255, 255, 1);
+    display: inline-block;
+    font-family: inderRegular;
+    font-size: 4em;
+    margin: 0 0 2em 0;
+    padding: 0 0 0.5em 0;
+}
+
+main #indexSuccess .container div[class*=col] h3 {
+    color: rgba(255, 255, 255, 1);
+    font-family: inderRegular;
+    font-size: 3em;
+}
+
+main #indexSuccess .container div[class*=col] h4 {
+    color: rgba(255, 255, 255, 1);
+    font-family: inderRegular;
+    font-size: 2em;
+    margin: 0 0 1em 0;
+}
+
+main #indexSuccess .container div[class*=col] h4 span {
+    color: rgba(0, 145, 234, 1);
+}
+
+
+main #indexSuccess .container div[class*=col] p {
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Segoe UI';
+    font-size: 1.1em;
+    margin: 0 0 2em 0;
+}
+
+
+main #indexSuccess .container div[class*=col] a {
+    border: 1px solid rgba(0, 145, 234, 1);
+    color: rgba(0, 145, 234, 1);
+    font-family: 'Segoe UI';
+    font-size: 1.1em;
+    padding: 0.5em 2em;
+    text-decoration: none;
+}
+
+
+main #indexSuccess .container div[class*=col] a:hover {
+    background-color: rgba(0, 145, 234, 1);
+    border: 1px solid rgba(0, 145, 234, 1);
+    color: rgba(255, 255, 255, 1);
+}
+/* #INDEXSUCCESS Styles End Here
+-------------------------------------------------  */
+
+
+
+main #indexBlogs {
+    background-color: rgba(255, 255, 255, 1);
+    clear: both;
+    height: auto;
+    min-height: 60vh;
+    padding: 2.5em 0;
+    text-align: center;
+    width: 100%;
+}
+
+
+main #indexBlogs .container {
+    padding-bottom: 2em;
+    padding-top: 0.5em; 
+}
+
+
+main #indexBlogs .container > h2 {
+    font-family: inderRegular;
+    font-size: 2.5em;
+}
+
+main #indexBlogs .container:nth-child(even) {
+    display: inline-flex;
+}
+
+main #indexBlogs .container:nth-child(even) div[class*=col] {
+    
+}
+
+
+
+
+/* #INDEXBLOGS Styles End Here
+-------------------------------------------------  */
+
+
+
+
+
+
+/* CONTENT STYLES END HERE
+-------------------------------------------------------------*/
+
+
+
+footer {
+    border-top: 1px solid rgba(0, 145, 234, 1);
+    clear: both;
+    height: auto;
+    min-height: 200px;
+    width: 100%;
+}
+
+footer #footerCon {
+    background-color: rgba(80, 80, 80, 1);
+    color: rgba(255, 255, 255, 1);
+    clear: both;
+    height: auto;
+    min-height: 180px;
+    padding: 1.0em 0;
+    width: 100%;
+}
+
+footer #footerCon .container-fluid div[class*=col-] h2 {
+    color: rgba(0, 145, 234, 1);
+    font-size: 1.5em;
+    font-weight: 900;
+    padding-bottom: 0.5em;
+    padding-top: 1em;
+}
+
+footer #footerCon .container-fluid div[class*=col-] ul li {
+    color: rgba(255, 255, 255, 1);
+    list-style: none;
+}
+
+footer #footerCon .container-fluid div[class*=col-] ul li a {
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+}
+
+footer #footerCon .container-fluid div[class*=col-] ul li a:hover {
+    font-weight: 900;
+}
+
+
+footer #footerRights {
+    background-color: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 1);
+    clear: both;
+    height: auto;
+    min-height: 30px;
+    padding: 0.2em 0;
+    width: 100%;
+}
+
+
+footer #footerRights .container-fluid div[class*=col-] p {
+    color: rgba(255, 255, 255, 1);
+}
+
+footer #footerRights .container-fluid div[class*=col-] p a {
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+}
+
+footer #footerRights .container-fluid div[class*=col-] p a:hover {
+    font-weight: 900;
+}
+
+
+
